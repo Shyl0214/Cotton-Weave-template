@@ -115,14 +115,16 @@ main {
 }
 
 .right-top h4 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
+  font-family: "Manrope", sans-serif;
 }
 
 .right-top h5 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   margin-right: 10px;
+   font-family: "Manrope", sans-serif;
 }
 
 .right-top i {
@@ -164,11 +166,12 @@ main {
   rotate: -90deg;
   transform-origin: 0 0;
   bottom: 5%;
-  left: -10%;
-  font-size: 25px;
+  left: -12%;
+  font-size: 23px;
   font-weight: 500;
-  /* letter-spacing: 10px; */
+  letter-spacing: 3px;
   word-spacing: 5px;
+   font-family: "Manrope", sans-serif;
   
 }
 
