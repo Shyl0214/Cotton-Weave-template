@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +21,13 @@ main {
   /* justify-content: center; */
   padding: 0 90px;
   padding-top: 110px;
-
+  gap: 90px;
 }
 
 #left {
   width: 45%;
   height: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -45,7 +47,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 3px 8px;
-  border: 1px solid black;
+  border: 1.6px solid black;
   margin-top: 130px;
   border-radius: 50px;
   /* background-color: pink; */
@@ -58,7 +60,7 @@ main {
   /* padding: 5px 5px; */
 }
 
-.color-1 { 
+.color-1 {
   width: 12px;
   height: 12px;
   background-color: brown;
@@ -80,61 +82,102 @@ main {
 }
 
 .content h5 {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 5px;
+  font-family: "Manrope", sans-serif;
 }
 
 .content p {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   color: #2b1e1e;
   line-height: 22px;
+  font-family: "Manrope", sans-serif;
+  /* font-family: manrope; */
 }
 
 #right {
-  width: 45%;
+  width: 30%;
   height: 90%;
-  background-color: red;
+  /* background-color: red;  */
+  position: relative;
 }
 
-.right-top{
+.right-top {
+  width: 100%;
+  height: 50px;
+  /* background-color: palegreen; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  /* padding: 10px; */
 }
 
-.right-top h5{
-  font-size: 18px;
+.right-top h4 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-.rating {
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-}
-
-.rating p {
-  margin-right: 5px ;
+.right-top h5 {
   font-size: 18px;
   font-weight: 500;
+  margin-right: 10px;
 }
 
-.rating i {
+.right-top i {
   font-size: 15px;
   font-weight: 500;
+  color: gold;
 }
 
-.img{
-  width: 60%;
-  height: 450px;
-  /* background-color: brown; */
+#right img {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#black-circle {
+  height: 120px;
+  width: 120px;
+  background-color: #151a1f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35%;
+  left: 83%;
+}
+
+#black-circle h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+
+#rotated {
+  /* background-color: yellow; */
+  position: absolute;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  bottom: 5%;
+  left: -10%;
+  font-size: 25px;
+  font-weight: 500;
+  /* letter-spacing: 10px; */
+  word-spacing: 5px;
+  
+}
+
+/* .img{
+  width: 65%;
+  height: 85%; 
+  background-color: brown;
   background-image: url(https://images.unsplash.com/photo-1541519481457-763224276691?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fG1vZGVsfGVufDB8fDB8fHww);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
