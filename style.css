@@ -18,16 +18,16 @@ main {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  /* justify-content: center; */
   padding: 0 90px;
   padding-top: 110px;
   gap: 90px;
 }
 
+/* left - section */
+
 #left {
   width: 45%;
   height: 100%;
-  /* background-color: yellow; */
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -36,9 +36,9 @@ main {
 }
 
 #left h1 {
-  font-size: 6.5rem;
+  font-size: 8vw;
   font-weight: 500;
-  line-height: 5rem;
+  line-height: 7vw;
 }
 
 .color-div {
@@ -48,16 +48,15 @@ main {
   justify-content: center;
   padding: 3px 8px;
   border: 1.6px solid black;
-  margin-top: 130px;
+  margin-top: 110px;
   border-radius: 50px;
-  /* background-color: pink; */
 }
 
 .color-div h5 {
-  font-size: 17px;
+  font-size: 1.3vw;
   font-weight: 500;
   margin-right: 5px;
-  /* padding: 5px 5px; */
+  /* background-color: pink; */
 }
 
 .color-1 {
@@ -73,45 +72,41 @@ main {
   height: 12px;
   background-color: rgb(42, 165, 165);
   border-radius: 50%;
-  /* margin: 3px; */
 }
 
 .content {
   width: 80%;
-  /* background-color: red; */
 }
 
 .content h5 {
-  font-size: 17px;
+  font-size: 1.3vw;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-family: "Manrope", sans-serif;
 }
 
 .content p {
-  font-size: 15px;
+  font-size: 1.1vw;
   font-weight: 500;
   color: #2b1e1e;
   line-height: 22px;
   font-family: "Manrope", sans-serif;
-  /* font-family: manrope; */
 }
+
+/* right - section */
 
 #right {
   width: 30%;
   height: 90%;
-  /* background-color: red;  */
   position: relative;
 }
 
 .right-top {
   width: 100%;
   height: 50px;
-  /* background-color: palegreen; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px; */
 }
 
 .right-top h4 {
@@ -124,7 +119,7 @@ main {
   font-size: 15px;
   font-weight: 500;
   margin-right: 10px;
-   font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .right-top i {
@@ -161,7 +156,6 @@ main {
 }
 
 #rotated {
-  /* background-color: yellow; */
   position: absolute;
   rotate: -90deg;
   transform-origin: 0 0;
@@ -171,16 +165,107 @@ main {
   font-weight: 500;
   letter-spacing: 3px;
   word-spacing: 5px;
-   font-family: "Manrope", sans-serif;
-  
+  font-family: "Manrope", sans-serif;
 }
 
-/* .img{
-  width: 65%;
-  height: 85%; 
-  background-color: brown;
-  background-image: url(https://images.unsplash.com/photo-1541519481457-763224276691?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fG1vZGVsfGVufDB8fDB8fHww);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
+/* media - queries */
+
+@media (max-width: 600px) {
+  /* main */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    gap: 2px;
+  }
+
+  /* left - section */
+
+  #left {
+    width: 100%;
+    height: 50%;
+    padding: 10px 20px;
+    /* background-color: red; */
+  }
+
+  #left h1 {
+    font-size: 22vw;
+    font-weight: 500;
+    line-height: 17vw;
+  }
+
+  .color-div {
+    padding: 5px 12px;
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+
+  .color-div h5 {
+    font-size: 4.5vw;
+    font-weight: 500;
+    margin-right: 5px;
+    /* background-color: pink; */
+  }
+
+  .color-1 {
+    width: 13px;
+    height: 13px;
+  }
+
+  .color-2 {
+    width: 13px;
+    height: 13px;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 13px;
+    margin-left: 5px;
+  }
+
+  .content h5 {
+    font-size: 4vw;
+  }
+
+  .content p {
+    font-size: 3.2vw;
+  }
+
+  /* right - section */
+
+  #right {
+    width: 100%;
+    height: 50%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right-top {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .right-top h4 {
+    font-size: 18px;
+  }
+
+  .right-top h5 {
+    font-size: 18px;
+  }
+
+  .right-top i {
+    font-size: 17px;
+  }
+
+  #right img {
+    width: 100%;
+    height: 90%;
+  }
+
+  #black-circle {
+    display: none;
+  }
+}
